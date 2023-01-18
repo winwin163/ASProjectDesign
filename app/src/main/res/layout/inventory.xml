@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="前台盘点"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:text="盘点单号:"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="获取本店最后盘点单号F5盘点日期:"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:text="盘点单号:"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:background="@color/white"/>
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="盘点仓库:"
+            android:textColor="@color/white" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:backgroundTint="@color/white"
+            android:text="打印盘点明细(P)"
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:text="打印盘点明细P"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="307dp"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="295dp">
+
+            <TextView
+                android:id="@+id/view_8"
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="序"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/view_9"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_toRightOf="@id/view_8"
+                android:text="货号"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/view_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_toRightOf="@id/view_9"
+                android:text="条码"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/view_11"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_toRightOf="@id/view_10"
+                android:text="商品名称"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/view_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_toRightOf="@id/view_11"
+                android:text="单位"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/view_13"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_toRightOf="@id/view_12"
+                android:text="电脑数量"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/view_14"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_toRightOf="@id/view_13"
+                android:text="盘点数量"
+                android:textColor="@color/white" />
+
+            <View
+                android:id="@+id/view_15"
+                android:layout_width="370dp"
+                android:layout_height="88dp"
+                android:layout_below="@id/view_9"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:text="条码F1:"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:background="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="数量F2:"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:background="@color/white"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/ESC"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/black"
+        android:text="返回"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+</LinearLayout>

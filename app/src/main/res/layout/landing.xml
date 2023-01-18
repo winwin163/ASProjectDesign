@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ImageView
+        android:src="@drawable/ic_launcher"
+        android:scaleType="fitCenter"
+        android:layout_height="350dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical" />
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="33dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:textAlignment="center"
+            android:text="工号:>" />
+
+        <EditText
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:width="200px" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:textAlignment="center"
+            android:text="密码:>" />
+        <EditText
+            android:width="100px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:text="确认" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退出"
+            android:id="@+id/button2"
+            android:layout_column="2" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下载基础资料"
+            android:id="@+id/button3"
+            android:layout_column="2" />
+    </TableRow>
+
+</TableLayout>

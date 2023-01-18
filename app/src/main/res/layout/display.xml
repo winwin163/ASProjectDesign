@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <!--添加居中显示的安卓图标图片ImageView，将显示在最下层-->
+
+    <ImageView
+        android:src="@drawable/ic_launcher"
+        android:scaleType="fitCenter"
+        android:layout_height="392dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical" />
+
+    <TextView
+        android:text="欢迎使用
+        POS收银系统"
+        android:textSize="150px"
+        android:textStyle="bold"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_gravity="right|bottom" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <!--            进入使用按钮-->
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:backgroundTint="@color/white"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:text="进入使用"
+            android:textColor="@color/black"
+            android:onClick="GoSecond"
+            android:textSize="30dp" />
+
+        <!--            返回登陆按钮-->
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:backgroundTint="@color/white"
+            android:paddingLeft="1dp"
+            android:text="返回登陆"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

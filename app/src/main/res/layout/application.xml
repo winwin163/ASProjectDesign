@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TableRow>
+
+
+
+    </TableRow>
+
+    <TableRow>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </TableRow>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:text="-----------------------------------------------------------------------------------------------------------" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="91dp"
+        android:layout_column="1"
+        android:text="      单号     经手人        操作日       审核日       制单     审核     状态" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:text="-----------------------------------------------------------------------------------------------------------" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="108dp"
+        android:layout_column="1"
+        android:text="  序     条码        品名规格       单位       数量     件数     零售价     现存" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:text="-----------------------------------------------------------------------------------------------------------" />
+
+    <TextView
+        android:layout_width="33dp"
+        android:layout_height="wrap_content"
+        android:text="条码:>" />
+
+    <EditText
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:width="200px" />
+
+    <TextView
+        android:layout_width="33dp"
+        android:layout_height="wrap_content"
+        android:text="数量:>" />
+
+    <EditText
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:width="200px" />
+
+    <TextView
+        android:layout_width="33dp"
+        android:layout_height="wrap_content"
+        android:text="备注:>" />
+
+    <EditText
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:width="200px" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:text="审核" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:text="传送" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_column="3"
+        android:text="关闭" />
+
+</TableLayout>

@@ -1,0 +1,1015 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+<!--    标题M1-->
+    <LinearLayout
+        android:id="@+id/M1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="100dp"
+        android:padding="1dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="1dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="广东二师计算机大数据"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="练习收银"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="移动怨种生联合出版舍"
+                android:textAlignment="textEnd"
+                android:textColor="@color/grey"
+                android:textSize="24sp"
+                tools:visibility="visible" />
+        </LinearLayout>
+
+        <!--分界线 横-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/M1"/>
+
+    </LinearLayout>
+
+<!--    列名M2--> <!--距离右边框100dp-->
+    <LinearLayout
+        android:id="@+id/M2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="100dp"
+        android:orientation="vertical"
+        android:padding="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/M1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="1dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="1dp"
+                android:layout_weight="1"
+                android:text="序"
+                android:textSize="15dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="货号"
+                android:textSize="15dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="条码"
+                android:textSize="15dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="品名规格"
+                android:textSize="15dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="数量"
+                android:textSize="15dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="原价"
+                android:textSize="15dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="单价"
+                android:textSize="15dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="金额"
+                android:textSize="15dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="营业员"
+                android:textSize="15dp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <!--分界线 横-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/M2"/>
+
+
+
+    </LinearLayout>
+
+<!--    选购列表M3--> <!--距离右边框100dp-->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginRight="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/M5"
+        app:layout_constraintTop_toBottomOf="@+id/M2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/shouAll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+<!--    提示信息按钮M4-->
+    <LinearLayout
+        android:layout_width="101dp"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        android:orientation="horizontal">
+
+        <!--        分界线 竖-->
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+
+        <!--        提示按钮-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--        赠送-->
+            <Button
+                android:id="@+id/give"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"
+                android:text="F3:赠送"
+                android:textColor="@color/white"
+                android:textSize="8sp" />
+
+            <!--        业务员-->
+            <Button
+                android:id="@+id/saleWorker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"
+                android:text="F4:业务员"
+                android:textColor="@color/white"
+                android:textSize="8sp" />
+
+            <!--        重打小票-->
+            <Button
+                android:id="@+id/painAgain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="F5:重打小票"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="10dp"/>
+
+            <!--        修改密码-->
+            <Button
+                android:id="@+id/changePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="F6:修改密码"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="10dp"/>
+
+            <!--        查金卡-->
+            <Button
+                android:id="@+id/checkCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="F7:查金卡"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="10dp"/>
+
+            <!--        查商品-->
+            <Button
+                android:id="@+id/checkGoods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="F8:查商品"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="10dp"/>
+
+            <!--        退货-->
+            <Button
+                android:id="@+id/returnGoods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="F9:退货"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="10dp"/>
+
+            <!--        单品打折-->
+            <Button
+                android:id="@+id/oneDiscount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="F11:单品打折"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="10dp"/>
+
+            <!--        会员消费-->
+            <Button
+                android:id="@+id/vipPay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="F12:会员消费"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="10dp"/>
+
+            <!--        整单打折-->
+            <Button
+                android:id="@+id/allDiscount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="-->:整单打折"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="10dp"/>
+
+            <!--        修改数量-->
+            <Button
+                android:id="@+id/changeSum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="`:修改数量"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="10dp"/>
+
+            <!--        修改金额-->
+            <Button
+                android:id="@+id/changePrices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="*:修改金额"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="10dp"/>
+
+            <!--        修改单价-->
+            <Button
+                android:id="@+id/changeOnePrices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=";:修改单价"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="10dp"/>
+
+            <!--        中途提款-->
+            <Button
+                android:id="@+id/takeRMB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="\:中途提款"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="10dp"/>
+
+            <!--        积分兑换-->
+            <Button
+                android:id="@+id/convert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="/:积分兑换"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="10dp"/>
+
+            <!--        上单行-->
+            <Button
+                android:id="@+id/up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="↑:上单行"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="10dp"/>
+
+            <!--        下单行-->
+            <Button
+                android:id="@+id/down"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="↓:下单行"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="10dp"/>
+
+            <!--        挂单-->
+            <Button
+                android:id="@+id/PageUP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PageUP挂单"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="10dp"/>
+
+            <!--        取单-->
+            <Button
+                android:id="@+id/pageDn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PageDn取单"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="10dp"/>
+
+            <!--        清除单-->
+            <Button
+                android:id="@+id/insert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="insert清除单"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="10dp"/>
+
+            <!--        删除行-->
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="delete删除行"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="10dp"/>
+
+            <!--        锁屏-->
+            <Button
+                android:id="@+id/Home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Home:锁屏"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="10dp"/>
+
+            <!--        开钱箱-->
+            <Button
+                android:id="@+id/End"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="End:开钱箱"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="10dp"/>
+
+            <!--        收款-->
+            <Button
+                android:id="@+id/Enter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Enter:收款"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="10dp"/>
+
+            <!--        ESC退出-->
+            <Button
+                android:id="@+id/esc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ESC:退出"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="10dp"/>
+
+            <!--        最小化-->
+            <Button
+                android:id="@+id/Pause"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Pause最小化"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="10dp"/>
+
+            <!--        销售明细-->
+            <Button
+                android:id="@+id/detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ctrl+S销售明细"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="10dp"/>
+
+            <!--        短信中心-->
+            <Button
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ctrl+B短信中心"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="10dp"/>
+
+            <!--        查看图片-->
+            <Button
+                android:id="@+id/checkPicture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ctrl+P查看图片"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="10dp"/>
+
+            <!--        手动联网-->
+            <Button
+                android:id="@+id/getNetwork"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ctrl+L手动联网"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="10dp"/>
+
+            <!--        商城订单-->
+            <Button
+                android:id="@+id/order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ctrl+M商城订单"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="10dp"/>
+
+            <!--        会员存货-->
+            <Button
+                android:id="@+id/vipStock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ctrl+V会员存货"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="10dp"/>
+
+            <!--        会员取货-->
+            <Button
+                android:id="@+id/vipTake"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ctrl+I会员取货"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="10dp"/>
+
+            <!--        打印小票-->
+            <Button
+                android:id="@+id/pain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ctrl+R预打小票"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--    总购商品信息M5--> <!--距离右边框100dp-->
+    <LinearLayout
+        android:id="@+id/M5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/M6"
+        android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <!--                品名-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="品名:"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/goodsName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/red"
+                    android:textSize="20dp"/>
+                <!--                单价-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="单价:"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/red"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <!--                合计-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="合计:"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/Sum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="@color/red"
+                        android:textSize="20dp"/>
+                    <!--                总件数-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="总件数:"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/allCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="@color/red"
+                        android:textSize="20dp"/>
+
+                    <!--                    总数量-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="总数量:"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/allCountSum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="@color/red"
+                        android:textSize="20dp"/>
+                </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="商品："
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <!--        商品名显示框-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="哇哈哈"
+                android:textSize="15dp"
+                android:textColor="@color/black"/>
+
+            <!--         打印发票按钮-->
+            <Button
+                android:id="@+id/invoice"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="打印发票（F2）"
+                android:backgroundTint="@color/grey"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+
+        <!--分界线 横-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/M2"/>
+
+    </LinearLayout>
+
+<!--    上单信息M6--> <!--距离右边框100dp-->
+    <LinearLayout
+        android:id="@+id/M6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="100dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!--        第一行-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <!--            单号-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:text="单号："
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/orderNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+                <!--            折购额-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:text="折购额："
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/discountSum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+                <!--            上单合计-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:text="上单合计："
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/lastSum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+                <!--            收银员-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:text="收银员："
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/workerID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--        第二行-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <!--            机号-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:text="机号："
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/machineID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+                <!--            整单折-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:text="整单折："
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/ollDiscount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+                <!--            上单实收-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:text="上单实收："
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/lastCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+                <!--            会员-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:text="会员："
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/VIP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <!--        第三行-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <!--            网络-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:text="机号："
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/network"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+                <!--            挂单数-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:text="整单折："
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/orderSum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+                <!--            上单找零-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:text="上单找零："
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/lastChange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

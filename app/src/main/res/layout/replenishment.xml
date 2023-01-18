@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:text="查询日期起始" />
+
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:width="200px" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:text="查询日期结束" />
+
+        <EditText
+            android:id="@+id/edit2"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:width="200px" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:layout_column="5"
+            android:text="历史查询记录" />
+
+    </TableRow>
+
+    <TableRow>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:text="查询" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:text="新单" />
+
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="83dp"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:text="删单" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="81dp"
+            android:layout_height="wrap_content"
+            android:layout_column="4"
+            android:text="修改" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:layout_column="5"
+            android:text="关闭" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </TableRow>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:text="                              点击对应单据查询具体补货详情             " />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="224dp"
+        android:layout_column="1"
+        android:text="      单号     经手人        操作日       审核日       制单     审核     状态" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="233dp"
+        android:layout_column="1"
+        android:text="  序     条码        品名规格       单位       数量     件数     零售价     现存" />
+
+
+</TableLayout>
